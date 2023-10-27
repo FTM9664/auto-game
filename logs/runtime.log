@@ -1,14 +1,13 @@
-2023-10-25 11:24:36 | INFO    | __main__:stash:125 | run - {'role': 'EpicPlayer', 'headless': True}
-2023-10-25 11:24:42 | INFO    | __main__:claim_epic_games:91 | Try to flush cookie - {'task': 'claim_epic_games'}
-2023-10-25 11:24:45 | SUCCESS    | epic_games.agent:_login:203 | login - {'result': 'Successfully refreshed tokens'}
-2023-10-25 11:24:54 | SUCCESS    | epic_games.agent:flush_token:224 | flush_token - {'path': PosixPath('/home/runner/work/auto-game/auto-game/epic/user_data_dir/epic-games@3356036505/ctx_cookie.json')}
-2023-10-25 11:24:55 | WARNING    | epic_games.agent:get_order_history:389 | Failed to get order history, cookie may have expired - {}
-2023-10-25 11:24:55 | DEBUG    | __main__:create_tasks:60 | Put task - {'title': 'The Evil Within', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within'}
-2023-10-25 11:24:55 | DEBUG    | __main__:create_tasks:60 | Put task - {'title': 'Eternal Threads', 'url': 'https://store.epicgames.com/en-US/p/eternal-threads-197169'}
-2023-10-25 11:24:55 | INFO    | epic_games.agent:claim_weekly_games:232 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within'}
-2023-10-25 11:25:07 | ERROR    | __main__:run:144 | An error has been caught in function 'run', process 'MainProcess' (3658), thread 'MainThread' (139811280956480): - {}
+2023-10-27 11:24:25 | INFO    | __main__:stash:129 | run - {'image': '20231026', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
+2023-10-27 11:24:37 | INFO    | __main__:claim_epic_games:95 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-10-27 11:24:40 | SUCCESS    | epic_games.agent:_login:203 | login - {'result': 'Successfully refreshed tokens'}
+2023-10-27 11:24:51 | SUCCESS    | epic_games.agent:flush_token:224 | flush_token - {'path': PosixPath('/home/runner/work/auto-game/auto-game/epic/user_data_dir/epic-games@3356036505/ctx_cookie.json')}
+2023-10-27 11:24:51 | WARNING    | epic_games.agent:get_order_history:389 | Failed to get order history, cookie may have expired - {}
+2023-10-27 11:24:52 | DEBUG    | __main__:create_tasks:64 | Put task - {'title': 'The Evil Within 2', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within-2'}
+2023-10-27 11:24:52 | INFO    | epic_games.agent:claim_weekly_games:232 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within-2'}
+2023-10-27 11:25:02 | ERROR    | __main__:run:155 | An error has been caught in function 'run', process 'MainProcess' (3556), thread 'MainThread' (140666892241792): - {}
 Traceback (most recent call last):
-  File "/home/runner/work/auto-game/auto-game/epic/src/claim.py", line 148, in <module>
+  File "/home/runner/work/auto-game/auto-game/epic/src/claim.py", line 159, in <module>
     asyncio.run(run())
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
     return loop.run_until_complete(main)
@@ -20,11 +19,11 @@ Traceback (most recent call last):
     handle._run()
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
     self._context.run(self._callback, *self._args)
-> File "/home/runner/work/auto-game/auto-game/epic/src/claim.py", line 144, in run
+> File "/home/runner/work/auto-game/auto-game/epic/src/claim.py", line 155, in run
     await agent.stash()
-  File "/home/runner/work/auto-game/auto-game/epic/src/claim.py", line 137, in stash
+  File "/home/runner/work/auto-game/auto-game/epic/src/claim.py", line 148, in stash
     await self.claim_epic_games(context)
-  File "/home/runner/work/auto-game/auto-game/epic/src/claim.py", line 116, in claim_epic_games
+  File "/home/runner/work/auto-game/auto-game/epic/src/claim.py", line 120, in claim_epic_games
     await epic.claim_weekly_games(page, single_promotions)
   File "/home/runner/work/auto-game/auto-game/epic/src/epic_games/agent.py", line 248, in claim_weekly_games
     await expect(cta_btn).to_have_text("View In Cart")
