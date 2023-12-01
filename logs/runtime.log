@@ -1,23 +1,28 @@
-2023-11-29 11:25:37 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post1', 'role': 'EpicPlayer', 'headless': True}
-2023-11-29 11:25:42 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Deliver Us Mars', 'url': 'https://store.epicgames.com/en-US/p/deliver-us-mars'}
-2023-11-29 11:25:48 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/deliver-us-mars'}
-2023-11-29 11:25:55 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-11-29 11:25:58 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2023-11-29 11:26:03 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': "Please click on the object that isn't following the pаttеrn"}
-2023-11-29 11:26:08 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2023-11-29 11:26:40 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/deliver-us-mars'}
-2023-11-29 11:26:48 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-11-29 11:26:51 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2023-11-29 11:26:56 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click each image containing an animal with four lеgs'}
-2023-11-29 11:26:57 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like animal with four legs.', "This is a picture that don't look like animal with four legs."], 'prompt': 'Please click each image containing an animal with four lеgs', 'timit': '0.930s'}
-2023-11-29 11:27:08 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2023-11-29 11:27:40 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/deliver-us-mars'}
-2023-11-29 11:27:49 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-11-29 11:27:51 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2023-11-29 11:27:56 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on each image containing the largest animal in real lіfe'}
-2023-11-29 11:27:58 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like parrot.', 'This is a picture that looks like ladybug.', 'This is a picture that looks like crab.', 'This is a picture that looks like bee.', 'This is a picture that looks like frog.', 'This is a picture that looks like bat.', 'This is a picture that looks like butterfly.', 'This is a picture that looks like dragonfly.', 'This is a picture that looks like giraffe.', 'This is a picture that looks like duck.', 'This is a picture that looks like cookie.', 'This is a picture that looks like turtle.', 'This is a picture that looks like dog.', 'This is a picture that looks like cat.', 'This is a picture that looks like tiger.'], 'prompt': 'Please click on each image containing the largest animal in real lіfe', 'timit': '0.920s'}
-2023-11-29 11:28:18 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2023-11-29 11:28:49 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3630), thread 'MainThread' (140147951405952): - {}
+2023-12-01 11:25:56 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post1', 'role': 'EpicPlayer', 'headless': True}
+2023-12-01 11:26:05 | INFO    | __main__:claim_epic_games:97 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-12-01 11:26:07 | SUCCESS    | epic_games.agent:_login:253 | login - {'result': 'Successfully refreshed tokens'}
+2023-12-01 11:26:16 | SUCCESS    | epic_games.agent:flush_token:280 | flush_token - {'path': PosixPath('/home/runner/work/auto-game/auto-game/epic/user_data_dir/epic-games@3356036505/ctx_cookie.json')}
+2023-12-01 11:26:16 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Mighty Fight Federation', 'url': 'https://store.epicgames.com/en-US/p/mighty-fight-federation'}
+2023-12-01 11:26:16 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Jitsu Squad', 'url': 'https://store.epicgames.com/en-US/p/jitsu-squad-af3f2f'}
+2023-12-01 11:26:16 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/mighty-fight-federation'}
+2023-12-01 11:26:19 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/jitsu-squad-af3f2f'}
+2023-12-01 11:26:28 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-12-01 11:26:31 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2023-12-01 11:26:36 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': "Please click on the hamster's hеаԁ"}
+2023-12-01 11:26:41 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2023-12-01 11:27:13 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/mighty-fight-federation'}
+2023-12-01 11:27:18 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/jitsu-squad-af3f2f'}
+2023-12-01 11:27:26 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-12-01 11:27:29 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2023-12-01 11:27:34 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': ' Please click on the object that is rotated with respect to its neіgһbοrs'}
+2023-12-01 11:27:39 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2023-12-01 11:28:11 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/mighty-fight-federation'}
+2023-12-01 11:28:15 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/jitsu-squad-af3f2f'}
+2023-12-01 11:28:24 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-12-01 11:28:26 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2023-12-01 11:28:31 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on the head of the аnіmal'}
+2023-12-01 11:28:45 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2023-12-01 11:29:17 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3607), thread 'MainThread' (139858703944576): - {}
 Traceback (most recent call last):
   File "/home/runner/work/auto-game/auto-game/epic/src/claim.py", line 151, in stash
     await self.claim_epic_games(context)
