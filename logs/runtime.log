@@ -1,4 +1,4 @@
-2024-01-01 11:26:37 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2024-01-01 11:26:43 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Ghostrunner', 'url': 'https://store.epicgames.com/en-US/p/ghostrunner'}
-2024-01-01 11:26:48 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/ghostrunner'}
-2024-01-01 11:27:03 | SUCCESS    | epic_games.agent:claim_weekly_games:314 | Pass claim task - {'reason': 'Free games not added to shopping cart'}
+2024-01-03 11:26:47 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2024-01-03 11:26:52 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': '20 Minutes Till Dawn', 'url': 'https://store.epicgames.com/en-US/p/20-minutes-till-dawn-be3305'}
+2024-01-03 11:26:56 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/20-minutes-till-dawn-be3305'}
+2024-01-03 11:27:11 | SUCCESS    | epic_games.agent:claim_weekly_games:314 | Pass claim task - {'reason': 'Free games not added to shopping cart'}
